@@ -10,7 +10,7 @@
 * Author: Webstudio New Trends
 * Author URI: http://webstudionovetrendy.eu/
 * License: GPL2
-* GitHub Plugin URI: https://github.com/novetrendy/SpeedUpWP
+* GitHub Plugin URI: https://github.com/novetrendy/NTBrand
 */
 /** Localization */
  add_action('plugins_loaded', 'nt_brand_plugin_localization_init');

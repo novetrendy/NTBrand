@@ -1,17 +1,16 @@
 <?php
 /*
-Plugin Name: NT Brand - WP admin modifications
-Plugin URI: http://webstudionovetrendy.eu/
-Description: Create Wordpress installation branded to webstudionovetrendy.eu
-Version: 160529
-* Version: 160523
+* Plugin Name: NT Brand - WP admin modifications
+* Plugin URI: http://webstudionovetrendy.eu/
+* Description: Create Wordpress installation branded to webstudionovetrendy.eu
+* Version: 161126
 * Text Domain: nt-brand
 * Domain Path: /languages/
-* License: Free to use and adapt
 * WP tested up to: 4.5.2
-Author: Webstudio New Trends
-Author URI: http://webstudionovetrendy.eu/
-License: GPL2
+* Author: Webstudio New Trends
+* Author URI: http://webstudionovetrendy.eu/
+* License: GPL2
+* GitHub Plugin URI: https://github.com/novetrendy/SpeedUpWP
 */
 /** Localization */
  add_action('plugins_loaded', 'nt_brand_plugin_localization_init');

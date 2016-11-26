@@ -3,7 +3,7 @@
 * Plugin Name: NT Brand - WP admin modifications
 * Plugin URI: http://webstudionovetrendy.eu/
 * Description: Create Wordpress installation branded to webstudionovetrendy.eu
-* Version: 161126
+* Version: 1611261
 * Text Domain: nt-brand
 * Domain Path: /languages/
 * WP tested up to: 4.5.2

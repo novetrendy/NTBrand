@@ -3,10 +3,10 @@
 * Plugin Name: NT Brand - WP admin modifications
 * Plugin URI: http://webstudionovetrendy.eu/
 * Description: Create Wordpress installation branded to webstudionovetrendy.eu
-* Version: 1611261
+* Version: 161211
 * Text Domain: nt-brand
 * Domain Path: /languages/
-* WP tested up to: 4.5.2
+* WP tested up to: 4.7
 * Author: Webstudio New Trends
 * Author URI: http://webstudionovetrendy.eu/
 * License: GPL2
@@ -45,8 +45,9 @@ add_filter('admin_footer_text', 'nt_left_admin_footer_text_output'); //left side
                                                     }
 add_filter('update_footer', 'nt_right_admin_footer_text_output', 11); //right side
     function nt_right_admin_footer_text_output($right_text)  {
-        //$right_text = 'Vytvořilo <a href="https://webstudionovetrendy.eu" target="_blank">Webstudio Nové Trendy</a> 06/2016';
-        $right_text = __('Created by','nt-brand') . ' <a href="https://webstudionovetrendy.eu" target="_blank">' . __('Webstudio New Trends','nt-brand') . '</a> 06/2016';
+        $frontpage_id = (int)get_option( 'page_on_front' );
+        $installdate = get_the_date(get_option('date_format'), $frontpage_id);
+        $right_text = __('Created by','nt-brand') . ' <a href="https://webstudionovetrendy.eu" target="_blank">' . __('Webstudio New Trends','nt-brand') . '</a> '.$installdate;
         return $right_text;
                                                     }
 /** CUSTOM ADMIN LOGIN HEADER LOGO */

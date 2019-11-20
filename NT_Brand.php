@@ -62,7 +62,7 @@ add_filter( 'login_headerurl', 'nt_login_logo_url' );
         return $nturl;
                                     }
 /** CUSTOM ADMIN LOGIN LOGO LINK */
-add_filter( 'login_headertitle', 'nt_login_logo_url_title' );
+add_filter( 'login_headertext', 'nt_login_logo_url_title' );
     function nt_login_logo_url_title()  {
     return __('Webstudio New Trends', 'nt-brand');
                                         }
